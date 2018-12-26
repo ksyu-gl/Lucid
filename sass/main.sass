@@ -1,0 +1,269 @@
+$primary-color: #1a1a1a
+$second-color: #999999
+$white: #ffffff
+$blue: #008ad6
+$quick: "Quicksand", sans-serif
+
+
+
+/*------------------------------ ГЛОБАЛЬНЫЕ СТИЛИ --------------------------*/
+
+html 
+  box-sizing: border-box
+
+*, *:before, *:after 
+  box-sizing: inherit
+
+body
+  margin: 0
+  padding: 0
+  font-family: "Source Sans Pro", sans-serif
+  font-size: 18px
+  line-height: 1.5
+  font-weight: 400
+  color: $second-color
+  background-color: #ffffff
+
+ul
+  list-style-type: none
+
+a
+  text-decoration: none
+
+.container-fluid
+  width: 100%
+  max-width: 1170px
+  margin: 0 auto
+
+
+
+/*------------------------------ HEADER --------------------------*/
+
+.header
+  position: fixed
+  left: 0
+  right: 0
+  top: 0
+  padding: 20px 0
+  display: flex
+  z-index: 1
+  &__content
+    display: flex
+    justify-content: space-between
+
+.list
+  display: flex
+  @media (max-width: 767px)
+    display: none
+  &__item
+    padding-right: 30px
+    @media (max-width: 767px)
+      padding: 15px
+      &:last-child
+        padding-left: 0
+  
+
+.nav
+  @media (max-width: 767px)
+    padding: 10px
+    margin-bottom: 3px
+    text-align: center
+  &__link
+    color: $white
+    padding-bottom: 5px
+    @media (max-width: 767px)
+     font-size: 20px
+    &:hover
+      border-bottom: 2px solid $blue
+    &:active
+      border-bottom: 2px solid $blue
+
+.menu__icon
+  display: none
+  @media (max-width: 767px)
+    display: block
+    margin-left: auto
+    font-size: 25px
+    color: $white 
+    z-index: 5
+
+.active 
+  position: absolute 
+  top: 0px
+  left: 0px
+  display: block
+  padding: 65px
+  width: 100%
+  padding-left: 5px
+  padding-right: 5px
+  z-index: 2
+  background-color: #16151b
+  margin: 0
+
+
+.logo
+  align-self: center
+
+.scroll
+  background-color: #131219
+  transition: all 0.3s ease
+
+
+
+/*------------------------------ BANNER --------------------------*/ 
+
+.bg
+  display: block
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  background-image: url("../img/banner.jpg")
+  background-size: cover
+  transition: 0.1s
+  z-index: -1
+  &:before
+    background: rgba(21, 20, 26, 0.9)
+    content: ""
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+
+
+.banner
+  position: relative
+  overflow: hidden
+  padding: 115px 0
+  @media (max-width: 575px)
+    padding: 120px 0
+  &__content
+    position: relative
+    padding-top: 23px
+  &__title
+    margin: 0
+    padding: 0
+    padding-bottom: 22px
+    font-size: 48px
+    color: $white
+    line-height: 1
+    @media (max-width: 1190px)
+      font-size: 45px
+    @media (max-width: 575px)
+      font-size: 40px
+  &__phone
+    position: absolute
+    top: 0
+    right: 25px
+    width: 490px
+    height: 640px
+    background-image: url("../img/devices-kopia.png")
+    background-size: cover
+    @media (max-width: 991px)
+      display: none
+
+.overtitle
+  margin: 0
+  padding: 18px 0 19px
+  font-size: 14px
+  font-weight: 700
+  color: $blue
+  text-transform: uppercase
+  letter-spacing: 1.5px
+
+.text
+  margin: 0
+  padding: 0
+  padding-bottom: 57px
+  @media (max-width: 1190px)
+    font-size: 16px 
+  @media (max-width: 575px)
+    padding-bottom: 40px
+
+.button 
+  display: inline-block
+  padding: 14px 27px
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+  color: $white
+  border-radius: 3px
+  @media (max-width: 575px)
+    padding: 15px
+  @media (max-width: 320px)
+    display: block
+    margin-bottom: 15px
+  &--blue 
+    background-color: $blue
+    box-shadow: 0px 0px 3px 0px rgba(3, 3, 3, 0.1)
+    &:hover, &:active
+      background-color: #0e7bb2
+  &--transparence
+    margin-left: 20px
+    border: 1px solid rgba(255, 255, 255, 0.2)
+    @media (max-width: 320px)
+      margin-left: 0
+    &:hover, &:active
+      border-color: #0e7bb2
+
+
+
+/*------------------------------ PRODUCT-OVERVIEW --------------------------*/ 
+
+.product-overview
+  position: relative
+  display: block
+  padding: 36px 0 130px
+  text-align: center
+  background-color: #fff
+  @media (max-width: 767px)
+    padding: 60px 0 
+  &__feature
+    display: flex
+    @media (max-width: 767px)
+      flex-wrap: wrap
+
+.title
+  margin: 0
+  padding: 0
+  padding-bottom: 80px
+  font-size: 36px
+  font-weight: 600
+  color: $primary-color
+  @media (max-width: 767px)  
+    padding-bottom: 30px
+  &:after
+    display: block
+    content: url("../img/line.png")
+  @media (max-width: 575px)    
+    padding-bottom: 0px
+
+.feature__i
+  width: 90px
+  height: 90px
+  margin: 0 auto
+  background-image: url("../img/icon.png")
+  border: 1px solid #e0e0e0
+  border-radius: 100px
+
+.monitor
+  background-position: 0px 0px
+
+.setting
+  background-position: -75px 0px
+
+.like
+  background-position: -148px 0px
+
+.phone
+  background-position: -217px 0px
+
+.feature__title
+  font-size: 24px
+  font-weight: 400
+  color: $primary-color
+  @media (max-width: 991px)
+    font-size: 20px
