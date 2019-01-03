@@ -14,6 +14,9 @@
   <link href="https://fonts.googleapis.com/css?family=Quicksand:700|Source+Sans+Pro:300,400,400i,600,700" rel="stylesheet">
   <!-- Main styles CSS -->
   <link rel="stylesheet" href="css/main.css">
+  <!-- Slick-slider -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 </head>
 
 <body>
@@ -28,13 +31,13 @@
         <span class="menu__icon" href="#">&#9776;</span>
         <nav class="nav">
           <ul class="list">
-              <li class="list__item"><a href="#" class="nav__link">Home</a></li>
-              <li class="list__item"><a href="#" class="nav__link">Features</a></li>
-              <li class="list__item"><a href="#" class="nav__link">About</a></li>
-              <li class="list__item"><a href="#" class="nav__link">Testimonials</a></li>
-              <li class="list__item"><a href="#" class="nav__link">Pricing</a></li>
-              <li class="list__item"><a href="#" class="nav__link">Contact</a></li>
-            </ul>
+            <li class="list__item"><a href="#" class="nav__link">Home</a></li>
+            <li class="list__item"><a href="#" class="nav__link">Features</a></li>
+            <li class="list__item"><a href="#" class="nav__link">About</a></li>
+            <li class="list__item"><a href="#" class="nav__link">Testimonials</a></li>
+            <li class="list__item"><a href="#" class="nav__link">Pricing</a></li>
+            <li class="list__item"><a href="#" class="nav__link">Contact</a></li>
+          </ul>
         </nav>
       </div>
     </div>
@@ -45,11 +48,13 @@
     <section class="banner">
       <div class="container-fluid">
         <div class="banner__content">
-          <p class="overtitle">introducing lucid theme</p>
-          <h1 class="banner__title col-11 col-lg-6">Carefully crafted and beautiful landing page.</h1>
-          <p class="text col-12 col-lg-5">Etiam ullamcorper et turpis eget hendrerit. Praesent varius risus mi, at elementum magna ultricies accumsan. Cras venenatis lacus sed dolor placerat tempus. Morbi blandit at neque ut imperdiet.</p>
-          <a href="#" class="button button--blue">download now</a>
-          <a href="#" class="button button--transparence">view features</a>
+          <p class="overtitle">Introducing lucid theme</p>
+          <h1 class="banner__title col-xs-12 col-sm-10 col-lg-6">Carefully crafted and beautiful landing page.</h1>
+          <p class="text col-xs-12 col-sm-10 col-lg-5">Etiam ullamcorper et turpis eget hendrerit. Praesent varius
+            risus mi, at elementum magna ultricies accumsan. Cras venenatis lacus sed dolor placerat tempus. Morbi
+            blandit at neque ut imperdiet.</p>
+          <a href="#" class="button button--blue">Download now</a>
+          <a href="#" class="button button--transparence">View features</a>
           <div class="banner__phone"></div>
         </div>
       </div>
@@ -58,32 +63,183 @@
     <!-- PRODUCT-OVERVIEW -->
     <section class="product-overview">
       <div class="container-fluid">
-        <p class="overtitle">product overview</p>
+        <p class="overtitle">Product overview</p>
         <h2 class="title">List of amazing features</h2>
         <div class="product-overview__feature">
           <div class="feature__block col-md-3 col-12 col-sm-6">
             <div class="feature__i monitor"></div>
             <h3 class="feature__title">Responsive</h3>
-            <p class="text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p>
+            <p class="text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia
+              consectetur.</p>
           </div>
           <div class="feature__block col-md-3 col-12 col-sm-6">
             <div class="feature__i setting"></div>
             <h3 class="feature__title">Customizable</h3>
-            <p class="text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p>
+            <p class="text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia
+              consectetur.</p>
           </div>
           <div class="feature__block col-md-3 col-12 col-sm-6">
             <div class="feature__i like"></div>
             <h3 class="feature__title">Lovely design</h3>
-            <p class="text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p>
+            <p class="text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia
+              consectetur.</p>
           </div>
           <div class="feature__block col-md-3 col-12 col-sm-6">
             <div class="feature__i phone"></div>
             <h3 class="feature__title">Mobile Friendly</h3>
-            <p class="text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p>
+            <p class="text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia
+              consectetur.</p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- DETAILS -->
+    <section class="details">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 phones-img"></div>
+          <div class="col-10 col-lg-6">
+            <p class="overtitle">Dip into the details</p>
+            <h2 class="title">Beautiful on every device</h2>
+            <p class="text">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+              Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in
+              elit. </p>
+            <ul class="details-list">
+              <li class="details-item">
+                <div class="feature__i feature__i--small cup"></div>Awesome design
+              </li>
+              <li class="details-item">
+                <div class="feature__i feature__i--small responsive"></div>Fully responsive
+              </li>
+              <li class="details-item">
+                <div class="feature__i feature__i--small levin"></div>Retina ready
+              </li>
+              <li class="details-item">
+                <div class="feature__i feature__i--small timer"></div>Tons of features and easy to use
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="details details--gray">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-10 col-lg-5">
+            <p class="overtitle">Dip into the details</p>
+            <h2 class="title">Super easy to customize</h2>
+            <p class="text">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+              Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in
+              elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+          </div>
+          <div class="col-lg-7 phone-img"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews">
+      <div class="reviews_bg"></div>
+      <div class="container-fluid">
+        <div class="row reviews__title">
+          <div class="col">
+            <div class="overtitle">Quality has its price</div>
+            <div class="title title--white">Pricings & Plans</div>
+          </div>
+        </div>
+        <div class="carousel">
+          <div>
+            <div class="row">
+              <div class="col-6">
+                <p class="reviews-text">Once upon a time all the Rivers combined to protest against the action of the
+                  Sea
+                  in making their waters salt. “When we come to you,” said they to the Sea.</p>
+                <img src="img/avatar1.jpg" alt="Profile photo" class="reviews-avatar">
+                <p class="reviews-author">John Doe<span>Ceo, the Rivers company</span></p>
+              </div>
+              <div class="col-6">
+                <p class="reviews-text">A shoe is not only a design, but it's a part of your body language, the way you
+                  walk. The way you're going to move is quite dictated by your shoes.</p>
+                <img src="img/avatar2.jpg" alt="Profile photo" class="reviews-avatar">
+                <p class="reviews-author">Dean Winchester<span>Ux designer, Google inc.</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="row">
+              <div class="col-6">
+                <p class="reviews-text">Once upon a time all the Rivers combined to protest against the action of the
+                  Sea
+                  in making their waters salt. “When we come to you,” said they to the Sea.</p>
+                <img src="img/avatar1.jpg" alt="Profile photo" class="reviews-avatar">
+                <p class="reviews-author">John Doe<span>Ceo, the Rivers company</span></p>
+              </div>
+              <div class="col-6">
+                <p class="reviews-text">A shoe is not only a design, but it's a part of your body language, the way you
+                  walk. The way you're going to move is quite dictated by your shoes.</p>
+                <img src="img/avatar2.jpg" alt="Profile photo" class="reviews-avatar">
+                <p class="reviews-author">Dean Winchester<span>Ux designer, Google inc.</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="row">
+              <div class="col-6">
+                <p class="reviews-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, nostrum et
+                  sint quis a enim consequuntur, dicta odit voluptas reiciendis distinctio obcaecati! Quaerat, nemo aut
+                  ipsa repellat reiciendis in modi!Fugiat modi sequi quas animi dolorum pariatur et deserunt nam officiis
+                  voluptatem dolores, ipsum omnis expedita perferendis delectus officia repellat quo perspiciatis nemo
+                  eos tenetur est placeat, nihil assumenda! Laudantium.</p>
+                <img src="img/avatar3.jpg" alt="Profile photo" class="reviews-avatar">
+                <p class="reviews-author">Kate River<span>Ceo, Yandex</span></p>
+              </div>
+              <div class="col-6">
+                <p class="reviews-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                  doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                  architecto beatae vitae dicta sunt explicabo.</p>
+                <img src="img/avatar4.jpg" alt="Profile photo" class="reviews-avatar">
+                <p class="reviews-author">Sam Ops<span>Ux designer, Google inc.</span></p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="row">
+            <div class="col-6">
+              <p class="reviews-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+              <img src="img/avatar5.jpg" alt="Profile photo" class="reviews-avatar">
+              <p class="reviews-author">Ken Sun<span>Manager, the Rivers compan</span></p>
+            </div>
+            <div class="col-6">
+              <p class="reviews-text"> Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+                molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+              <img src="img/avatar6.jpg" alt="Profile photo" class="reviews-avatar">
+              <p class="reviews-author">Dean Mils<span>Translator, GOOGLE INC.</span></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <p class="reviews-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum
+                et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+              <img src="img/avatar7.jpg" alt="Profile photo" class="reviews-avatar">
+              <p class="reviews-author">John Smit<span>"Flower" company director</span></p>
+            </div>
+            <div class="col-6">
+              <p class="reviews-text">On the other hand, we denounce with righteous indignation and dislike men who are
+                so beguiled and demoralized by the charms.</p>
+              <img src="img/avatar8.jpg" alt="Profile photo" class="reviews-avatar">
+              <p class="reviews-author">Den Poklan<span>Graphic Designer, YANDEX.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
   </main>
 
@@ -94,6 +250,8 @@
   <!-- Scripts -->
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/script.js"></script>
+  <!-- Slick-slider -->
+  <script type="text/javascript" src="slick/slick.min.js"></script>
 </body>
 
 </html>

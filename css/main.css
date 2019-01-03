@@ -6,7 +6,10 @@ html {
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit; }
+          box-sizing: inherit;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 body {
   margin: 0;
@@ -150,6 +153,9 @@ a {
   @media (max-width: 575px) {
     .banner {
       padding: 120px 0; } }
+  @media (max-width: 450px) {
+    .banner {
+      padding: 80px 0; } }
   .banner__content {
     position: relative;
     padding-top: 23px; }
@@ -172,7 +178,7 @@ a {
     right: 25px;
     width: 490px;
     height: 640px;
-    background-image: url("../img/devices-kopia.png");
+    background-image: url("../img/devices.png");
     -webkit-background-size: cover;
             background-size: cover; }
     @media (max-width: 991px) {
@@ -244,7 +250,8 @@ a {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    padding-top: 60px; }
     @media (max-width: 767px) {
       .product-overview__feature {
         -webkit-flex-wrap: wrap;
@@ -254,10 +261,12 @@ a {
 .title {
   margin: 0;
   padding: 0;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   font-size: 36px;
   font-weight: 600;
   color: #1a1a1a; }
+  .title--white {
+    color: #ffffff; }
   @media (max-width: 767px) {
     .title {
       padding-bottom: 30px; } }
@@ -276,6 +285,15 @@ a {
   border: 1px solid #e0e0e0;
   -webkit-border-radius: 100px;
           border-radius: 100px; }
+  .feature__i--small {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: none;
+    position: absolute;
+    left: -30px;
+    top: -webkit-calc(50% - 17px);
+    top: calc(50% - 17px); }
 
 .monitor {
   background-position: 0px 0px; }
@@ -289,6 +307,18 @@ a {
 .phone {
   background-position: -217px 0px; }
 
+.cup {
+  background-position: -18px -157px; }
+
+.responsive {
+  background-position: -41px -157px; }
+
+.levin {
+  background-position: -60px -157px; }
+
+.timer {
+  background-position: -84px -157px; }
+
 .feature__title {
   font-size: 24px;
   font-weight: 400;
@@ -296,3 +326,86 @@ a {
   @media (max-width: 991px) {
     .feature__title {
       font-size: 20px; } }
+
+.details {
+  padding: 70px 0;
+  background-color: #ffffff; }
+  .details-list {
+    padding-left: 30px; }
+  .details-item {
+    position: relative;
+    padding-bottom: 10px;
+    color: #1b1b1b; }
+  .details--gray {
+    background-color: #f2f2f2; }
+
+.phones-img {
+  background-image: url("../img/devices.png");
+  background-repeat: no-repeat;
+  height: 680px; }
+  @media (max-width: 991px) {
+    .phones-img {
+      display: none; } }
+
+.phone-img {
+  background-image: url("../img/iPhone-5.png");
+  background-repeat: no-repeat;
+  height: 500px; }
+  @media (max-width: 991px) {
+    .phone-img {
+      display: none; } }
+
+.reviews {
+  padding: 70px 0;
+  background-color: #ffffff;
+  position: relative; }
+  .reviews::before {
+    background: #15141a;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .reviews_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/banner2.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    opacity: 0.3; }
+  .reviews__title {
+    text-align: center; }
+  .reviews-text {
+    color: #ffffff;
+    font-size: 24px;
+    font-style: italic; }
+  .reviews-author {
+    position: absolute;
+    top: 66%;
+    left: 100px;
+    display: inline-block;
+    font-size: 16px; }
+    .reviews-author span {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  .reviews-avatar {
+    position: relative;
+    display: inline-block;
+    width: 67px;
+    height: 67px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
+
+.black-r {
+  height: 400px;
+  background-color: red; }

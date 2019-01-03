@@ -23,3 +23,16 @@ function parallax() {
 		$('.banner__content').css('opacity', 1 - (scrolled*0.01)/5);
 	}
 }
+
+// slick-slider
+
+$(document).ready(function(){
+  $('.carousel').slick({
+    dots: true,
+		infinite: true,
+		autoplay: true,
+		speed: 500,
+		fade: true,
+		cssEase: 'linear'
+  });
+});
