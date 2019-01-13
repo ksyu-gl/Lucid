@@ -69,10 +69,12 @@ a
     color: $white
     padding-bottom: 5px
     border-bottom: 2px solid transparent
+    transition: all 0.3s ease
     @media (max-width: 767px)
      font-size: 20px
     &:hover
       border-bottom: 2px solid $blue
+      transition: all 0.3s ease
     &:active
       border-bottom: 2px solid $blue
 
@@ -83,6 +85,7 @@ a
     margin-left: auto
     font-size: 25px
     color: $white 
+    cursor: pointer
     z-index: 5
 
 .active 
@@ -191,6 +194,7 @@ a
   text-transform: uppercase
   color: $white
   border-radius: 3px
+  cursor: pointer
   @media (max-width: 575px)
     padding: 15px
   @media (max-width: 320px)
@@ -261,6 +265,7 @@ a
   @media (max-width: 767px)  
     padding-bottom: 30px
   @media (max-width: 590px)
+    padding-bottom: 10px
     font-size: 30px
   &::after
     content: url("../img/line.png")
@@ -279,6 +284,8 @@ a
   font-weight: 600
   color: #1a1a1a
   position: relative
+  @media (max-width: 590px)
+    padding: 0 0 10px 0
   &::after
     content: url("../img/line.png")
     position: absolute
@@ -324,7 +331,7 @@ a
 .phone
   background-position: -217px 0px
   &--contact
-    background-position: -240px -29px
+    background-position: -244px -29px
 
 .cup
   background-position: -18px -157px
@@ -443,13 +450,21 @@ a
   background-color: red
 
 .slick-dots 
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
   li
-    width: 10px
-    height: 10px
+    width: 8px
+    height: 8px
     border-radius: 50px
     background-color: transparent 
     border: 1px solid $white
-    margin-top: 10px
+    margin: 0 9px
+  .slick-active
+    width: 16px
+    height: 16px
+    background-color: $white
 
 .slick-slide
   &:focus
@@ -515,7 +530,6 @@ a
     padding: 20px 0 20px 0
     border: 1px solid #e0e0e0
     margin-bottom: 10px
-    transition: all 0.3s ease 0s
     &:hover
       transition: all 0.3s ease 0s
       cursor: pointer
@@ -523,9 +537,11 @@ a
         background-color: $blue
         color: $white
         cursor: pointer
+        transition: all 0.3s ease 0s
       .button--white
         background-color: $blue
         color: $white
+        transition: all 0.3s ease 0s
       sup 
         color: $white
         -webkit-transform-style: preserve-3d
@@ -539,6 +555,7 @@ a
     font-weight: 700
     color: $primary-color
     text-transform: uppercase
+    transition: all 0.3s ease 0s
   
   &__text
     padding: 0 10px 40px 10px
@@ -556,6 +573,10 @@ a
   background-color: #ededed
   &-addres
     padding-bottom: 160px
+    @media (max-width: 767px)
+      padding: 20px 0 
+    &__col
+      padding-bottom: 15px
   &-phone 
     margin-bottom: 0
   &-fax
@@ -567,12 +588,21 @@ a
     transform: translate(-50%, 0)
     padding: 40px
     background-color: #15141a
+    @media (max-width: 767px)
+      position: relative
+      padding: 20px
+      margin-bottom: 20px
     &-container
       display: flex
       padding: 14px 30px 0px 10px
+      @media (max-width: 767px)
+        flex-direction: column
     &-button
       text-align: right
       margin-right: 30px
+      @media (max-width: 767px)
+        margin-top: 10px
+        text-align: center
       &--blue 
         padding: 15px 17px
 
@@ -588,16 +618,25 @@ a
     background-color: transparent
     border: 1px solid rgba(255, 255, 255, 0.2)
     border-radius: 5px
+    @media (max-width: 767px)
+      width: 100%
   &-textarea
     margin-left: 18px
     padding: 20px 213px 0px 20px
-    color: $white
+    font-family: "Source Sans Pro", sans-serif
     font-size: 14px
+    color: $white
     font-weight: 700
     background-color: transparent 
     border: 1px solid rgba(255, 255, 255, 0.2)
     border-radius: 5px
     resize: none
+    @media (max-width: 767px)
+      margin-left: 0
+      width: 100%
+
+.map
+  height: 460px
     
     
 
@@ -628,23 +667,23 @@ a
   margin-right: 15px
   &--behance
     background-position: -6px -1px
-    &:hover
+    &:hover, &:active
       background-position: -6px -31px
   &--dribbble
     background-position: -37px -1px
-    &:hover
+    &:hover, &:active
       background-position: -37px -31px
   &--twitter
     background-position: -70px -1px
-    &:hover
+    &:hover, &:active
       background-position: -70px -31px
   &--facebook
     background-position: -96px -1px
-    &:hover
+    &:hover, &:active
       background-position: -96px -31px
   &--in
     background-position: -126px -1px
-    &:hover
+    &:hover, &:active
       background-position: -126px -31px
 
 
