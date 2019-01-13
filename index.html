@@ -12,11 +12,11 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Quicksand:700|Source+Sans+Pro:300,400,400i,600,700" rel="stylesheet">
-  <!-- Main styles CSS -->
-  <link rel="stylesheet" href="css/main.css">
   <!-- Slick-slider -->
   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <!-- Main styles CSS -->
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -31,12 +31,12 @@
         <span class="menu__icon" href="#">&#9776;</span>
         <nav class="nav">
           <ul class="list">
-            <li class="list__item"><a href="#" class="nav__link">Home</a></li>
-            <li class="list__item"><a href="#" class="nav__link">Features</a></li>
-            <li class="list__item"><a href="#" class="nav__link">About</a></li>
-            <li class="list__item"><a href="#" class="nav__link">Testimonials</a></li>
-            <li class="list__item"><a href="#" class="nav__link">Pricing</a></li>
-            <li class="list__item"><a href="#" class="nav__link">Contact</a></li>
+            <li class="list__item"><a href="#Home" class="nav__link">Home</a></li>
+            <li class="list__item"><a href="#Features" class="nav__link">Features</a></li>
+            <li class="list__item"><a href="#About" class="nav__link">About</a></li>
+            <li class="list__item"><a href="#Testimonials" class="nav__link">Testimonials</a></li>
+            <li class="list__item"><a href="#Pricing" class="nav__link">Pricing</a></li>
+            <li class="list__item"><a href="#Contact" class="nav__link">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -45,7 +45,7 @@
 
   <main class="main">
     <!-- BANNER -->
-    <section class="banner">
+    <section class="banner" id="Home">
       <div class="container-fluid">
         <div class="banner__content">
           <p class="overtitle">Introducing lucid theme</p>
@@ -54,17 +54,17 @@
             risus mi, at elementum magna ultricies accumsan. Cras venenatis lacus sed dolor placerat tempus. Morbi
             blandit at neque ut imperdiet.</p>
           <a href="#" class="button button--blue">Download now</a>
-          <a href="#" class="button button--transparence">View features</a>
+          <a href="#Features" class="button button--transparence">View features</a>
           <div class="banner__phone"></div>
         </div>
       </div>
     </section>
 
     <!-- PRODUCT-OVERVIEW -->
-    <section class="product-overview">
+    <section class="product-overview" id="Features">
       <div class="container-fluid">
         <p class="overtitle">Product overview</p>
-        <h2 class="title">List of amazing features</h2>
+        <h2 class="title-center">List of amazing features</h2>
         <div class="product-overview__feature">
           <div class="feature__block col-md-3 col-12 col-sm-6">
             <div class="feature__i monitor"></div>
@@ -95,7 +95,7 @@
     </section>
 
     <!-- DETAILS -->
-    <section class="details">
+    <section class="details" id="About">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-6 phones-img"></div>
@@ -139,119 +139,223 @@
     </section>
 
     <!-- REVIEWS -->
-    <section class="reviews">
+    <section class="reviews" id="Testimonials">
       <div class="reviews_bg"></div>
       <div class="container-fluid">
         <div class="row reviews__title">
           <div class="col">
             <div class="overtitle">Quality has its price</div>
-            <div class="title title--white">Pricings & Plans</div>
+            <div class="title-center title-center--white">Pricings & Plans</div>
           </div>
         </div>
         <div class="carousel">
           <div>
             <div class="row">
-              <div class="col-6">
-                <p class="reviews-text">Once upon a time all the Rivers combined to protest against the action of the
-                  Sea
-                  in making their waters salt. “When we come to you,” said they to the Sea.</p>
-                <img src="img/avatar1.jpg" alt="Profile photo" class="reviews-avatar">
-                <p class="reviews-author">John Doe<span>Ceo, the Rivers company</span></p>
+              <div class="col">
+                <p class="reviews-text">Once upon a time all the Rivers combined to protest against the action of the Sea in making their waters salt. “When we come to you,” said they to the Sea.</p>
+                <div class="reviews-author__info">
+                  <img src="img/avatar1.jpg" alt="Profile photo" class="reviews-avatar">
+                  <p class="reviews-author">John Doe<span>Ceo, the Rivers company</span></p>
+                </div>
               </div>
-              <div class="col-6">
+              <div class="col">
                 <p class="reviews-text">A shoe is not only a design, but it's a part of your body language, the way you
                   walk. The way you're going to move is quite dictated by your shoes.</p>
-                <img src="img/avatar2.jpg" alt="Profile photo" class="reviews-avatar">
-                <p class="reviews-author">Dean Winchester<span>Ux designer, Google inc.</span></p>
+                <div class="reviews-author__info">
+                  <img src="img/avatar2.jpg" alt="Profile photo" class="reviews-avatar">
+                  <p class="reviews-author">Dean Winchester<span>Ux designer, Google inc.</span></p>
+                </div>
               </div>
             </div>
           </div>
 
           <div>
             <div class="row">
-              <div class="col-6">
-                <p class="reviews-text">Once upon a time all the Rivers combined to protest against the action of the
-                  Sea
-                  in making their waters salt. “When we come to you,” said they to the Sea.</p>
-                <img src="img/avatar1.jpg" alt="Profile photo" class="reviews-avatar">
-                <p class="reviews-author">John Doe<span>Ceo, the Rivers company</span></p>
-              </div>
-              <div class="col-6">
-                <p class="reviews-text">A shoe is not only a design, but it's a part of your body language, the way you
-                  walk. The way you're going to move is quite dictated by your shoes.</p>
-                <img src="img/avatar2.jpg" alt="Profile photo" class="reviews-avatar">
-                <p class="reviews-author">Dean Winchester<span>Ux designer, Google inc.</span></p>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div class="row">
-              <div class="col-6">
+              <div class="col">
                 <p class="reviews-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, nostrum et
                   sint quis a enim consequuntur, dicta odit voluptas reiciendis distinctio obcaecati! Quaerat, nemo aut
                   ipsa repellat reiciendis in modi!Fugiat modi sequi quas animi dolorum pariatur et deserunt nam officiis
                   voluptatem dolores, ipsum omnis expedita perferendis delectus officia repellat quo perspiciatis nemo
                   eos tenetur est placeat, nihil assumenda! Laudantium.</p>
-                <img src="img/avatar3.jpg" alt="Profile photo" class="reviews-avatar">
-                <p class="reviews-author">Kate River<span>Ceo, Yandex</span></p>
+                <div class="reviews-author__info">
+                  <img src="img/avatar3.jpg" alt="Profile photo" class="reviews-avatar">
+                  <p class="reviews-author">Kate River<span>Ceo, Yandex</span></p>
+                </div>
               </div>
-              <div class="col-6">
+              <div class="col">
                 <p class="reviews-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
                   doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
                   architecto beatae vitae dicta sunt explicabo.</p>
-                <img src="img/avatar4.jpg" alt="Profile photo" class="reviews-avatar">
-                <p class="reviews-author">Sam Ops<span>Ux designer, Google inc.</span></p>
+                <div class="reviews-author__info">
+                  <img src="img/avatar4.jpg" alt="Profile photo" class="reviews-avatar">
+                  <p class="reviews-author">Sam Ops<span>Ux designer, Google inc.</span></p>
+                </div>
               </div>
             </div>
           </div>
-        
-          <div class="row">
-            <div class="col-6">
-              <p class="reviews-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
-                quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-              <img src="img/avatar5.jpg" alt="Profile photo" class="reviews-avatar">
-              <p class="reviews-author">Ken Sun<span>Manager, the Rivers compan</span></p>
-            </div>
-            <div class="col-6">
-              <p class="reviews-text"> Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-                molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-              <img src="img/avatar6.jpg" alt="Profile photo" class="reviews-avatar">
-              <p class="reviews-author">Dean Mils<span>Translator, GOOGLE INC.</span></p>
+
+          <div>
+            <div class="row">
+              <div class="col">
+                <p class="reviews-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                  quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                <div class="reviews-author__info">
+                  <img src="img/avatar5.jpg" alt="Profile photo" class="reviews-avatar">
+                  <p class="reviews-author">Ken Sun<span>Manager, the Rivers compan</span></p>
+                </div>
+              </div>
+              <div class="col">
+                <p class="reviews-text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+                  molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <div class="reviews-author__info">
+                  <img src="img/avatar6.jpg" alt="Profile photo" class="reviews-avatar">
+                  <p class="reviews-author">Dean Mils<span>Translator, GOOGLE INC.</span></p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-6">
-              <p class="reviews-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-                cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum
-                et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
-              <img src="img/avatar7.jpg" alt="Profile photo" class="reviews-avatar">
-              <p class="reviews-author">John Smit<span>"Flower" company director</span></p>
+          
+          <div>
+            <div class="row">
+              <div class="col">
+                <p class="reviews-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                  praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                  cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum
+                  et dolorum fuga.</p>
+                <div class="reviews-author__info">
+                  <img src="img/avatar7.jpg" alt="Profile photo" class="reviews-avatar">
+                  <p class="reviews-author">John Smit<span>"Flower" company director</span></p>
+                </div>
+              </div>
+              <div class="col">
+                <p class="reviews-text">On the other hand, we denounce with righteous indignation and dislike men who are
+                  so beguiled and demoralized by the charms.</p>
+                <div class="reviews-author__info">
+                  <img src="img/avatar8.jpg" alt="Profile photo" class="reviews-avatar">
+                  <p class="reviews-author">Den Poklan<span>Graphic Designer, YANDEX.</span></p>
+                </div>
+              </div>
             </div>
-            <div class="col-6">
-              <p class="reviews-text">On the other hand, we denounce with righteous indignation and dislike men who are
-                so beguiled and demoralized by the charms.</p>
-              <img src="img/avatar8.jpg" alt="Profile photo" class="reviews-avatar">
-              <p class="reviews-author">Den Poklan<span>Graphic Designer, YANDEX.</span></p>
+          </div>
+        </div>
+    </section>
+
+    <section class="download">
+      <div class="container-fluid">
+        <div class="download__container">
+          <p class="download__text"><span>Like what you see?</span> Get this great theme now!</p>
+          <div class="button-col">
+            <a href="#Features" class="button button--transparence">View features</a>
+            <a href="#" class="button button--blue">Download now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="prices">
+      <div class="container-fluid">
+        <p class="overtitle">Quality has its price</p>
+        <h2 class="title-center">Pricings & Plans</h2>
+        <div class="prices-container">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="prices-col">
+                <span class="inner"></span>
+                <a href="#" class="prices__title">Free</a>
+                <p class="price"><sup>$</sup>0<span>/per month<span></span></p>
+                <p class="prices__text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <a href="#">lacinia</a> consectetur.</p>
+                <a href="" class="button button--white">Order now</a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="prices-col">
+                <a href="#" class="prices__title">Personal</a>
+                <p class="price"><sup class="inner">$</sup>25<span>/per month<span></span></p>
+                <p class="prices__text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <a href="#">lacinia</a> consectetur.</p>
+                <a href="" class="button button--white">Order now</a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="prices-col">
+                <a href="#" class="prices__title">Business</a>
+                <p class="price"><sup class="inner">$</sup>50<span>/per month<span></span></p>
+                <p class="prices__text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <a href="#">lacinia</a> consectetur.</p>
+                <a href="" class="button button--white">Order now</a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div class="prices-col">
+                <a href="#" class="prices__title">Ultimate</a>
+                <p class="price"><sup class="inner">$</sup>99<span>/per month<span></span></p>
+                <p class="prices__text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <a href="#">lacinia</a> consectetur.</p>
+                <a href="" class="button button--white">Order now</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-
+    <section class="contact">
+      <div class="container-fluid">
+        <p class="overtitle">Stay in touch</p>
+        <h2 class="title-center">Contact us</h2>
+        <div class="row contact-addres">
+          <div class="col-12 col-md-2 offset-md-1">
+            <div class="feature__i feature__i--contact phone--contact"></div>
+            <p class="contact-phone">Phone: (415) 124-5678</p>
+            <p class="contact-fax">Fax: (412) 123-8290</p>
+          </div>
+          <div class="col-12 col-md-2 offset-md-2">
+            <div class="feature__i feature__i--contact pin"></div>
+            <p class="contact-addres">1001 Brickell Bay Dr.Suite 1900 Miami, FL 33131</p>
+          </div>
+          <div class="col-12 col-md-2 offset-md-2">
+            <div class="feature__i feature__i--contact email"></div>
+            <p class="contact-email">support@yourname.com</p>
+          </div>
+        </div>
+        <div class="contact__form">
+          <form action="#" method="post">
+              <div class="contact__form-container">
+                <div class="form-container">
+                    <input type="text" name="name" class="form-input" placeholder="NAME *" required>
+                    <input type="email" name="email" class="form-input" placeholder="EMAIL *" required>
+                    <input type="text" name="subject" class="form-input" placeholder="SUBJECT *" required>
+                </div>
+                <div class="form-container">
+                  <textarea name="message" class="form-textarea" cols="6" rows="10" placeholder="MESSAGE*"></textarea>
+                </div>
+              </div>
+              <div class="contact__form-button">
+                <button class="button button--blue form-button--blue">Send message</button>
+              </div>
+          </form>
+        </div>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.208693952918!2d-80.19159098497903!3d25.76366948363587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b68239e95dcd%3A0x558d4b70966affec!2zMTAwMSBCcmlja2VsbCBCYXkgRHIgIzE5MDAsIE1pYW1pLCBGTCAzMzEzMSwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1547382604148" width="100%" height="460" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
-
+    <div class="container-fluid">
+      <div class="social-icons">
+        <a class="social-icon social-icon--behance" href="#"></a>
+        <a class="social-icon social-icon--dribbble" href="#"></a>
+        <a class="social-icon social-icon--twitter" href="#"></a>
+        <a class="social-icon social-icon--facebook" href="#"></a>
+        <a class="social-icon social-icon--in" href="#"></a>
+      </div>
+      <p class="footer__copyright">Copyright © 2014 lucid onepage theme</p>
+    </div>
   </footer>
 
   <!-- Scripts -->
   <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/script.js"></script>
-  <!-- Slick-slider -->
   <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

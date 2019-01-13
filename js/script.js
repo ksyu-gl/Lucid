@@ -28,6 +28,7 @@ function parallax() {
 
 $(document).ready(function(){
   $('.carousel').slick({
+		arrows: false,
     dots: true,
 		infinite: true,
 		autoplay: true,
@@ -36,3 +37,10 @@ $(document).ready(function(){
 		cssEase: 'linear'
   });
 });
+
+
+
+
+
+
+
