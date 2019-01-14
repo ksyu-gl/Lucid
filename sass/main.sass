@@ -265,8 +265,9 @@ a
   @media (max-width: 767px)  
     padding-bottom: 30px
   @media (max-width: 590px)
-    padding-bottom: 10px
+    padding-bottom: 15px
     font-size: 30px
+    line-height: 1.2
   &::after
     content: url("../img/line.png")
     display: block
@@ -274,8 +275,6 @@ a
     top: 38px
     @media (max-width: 590px)
       display: none
-  @media (max-width: 575px)    
-    padding-bottom: 0px
 
 .title-center
   margin: 0
@@ -426,6 +425,8 @@ a
       font-size: 18px
     @media (max-width: 660px)
       font-size: 16px
+    @media (max-width: 590px)
+      font-size: 14px
   &-author
     display: inline-block
     font-size: 16px
@@ -465,6 +466,7 @@ a
     width: 16px
     height: 16px
     background-color: $white
+
 
 .slick-slide
   &:focus
@@ -512,13 +514,22 @@ a
   color: $primary-color
   border-top: 1px solid #e0e0e0
   border-bottom: 1px solid #e0e0e0
+  @media (max-width: 767px)
+    font-size: 50px
+  @media (max-width: 576px)
+    margin: 15px
+    padding: 5px
   & sup 
     font-size: 28px
+    @media (max-width: 767px)
+      font-size: 25px
   & span 
     display: block
     font-size: 18px
     font-weight: 400
     color: $second-color
+    @media (max-width: 767px)
+      font-size: 18px
 
 .prices
   padding: 60px 0
@@ -544,8 +555,6 @@ a
         transition: all 0.3s ease 0s
       sup 
         color: $white
-        -webkit-transform-style: preserve-3d
-        -webkit-backface-visibility: hidden
       span 
         color: $white
       .prices__title
@@ -556,9 +565,14 @@ a
     color: $primary-color
     text-transform: uppercase
     transition: all 0.3s ease 0s
-  
+    @media (max-width: 767px)
+      font-size: 20px
   &__text
     padding: 0 10px 40px 10px
+    @media (max-width: 990px)
+      font-size: 16px
+    @media (max-width: 576px)
+      padding: 5px
     a 
       color: $blue
 

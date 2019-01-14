@@ -34,6 +34,7 @@ $(document).ready(function(){
 		autoplay: true,
 		speed: 500,
 		fade: true,
+		// adaptiveHeight: true,
 		cssEase: 'linear'
   });
 });
