@@ -8,6 +8,16 @@ $('.menu__icon').on('click', function(){
 	$('.list').toggleClass(' active');
 });
 
+// при клике на li закрывается меню
+
+$(window).scroll(function(){
+	if ($(this).scrollTop() < 767) {
+		$('.nav__link').on('click', function(){
+			$('.list').removeClass(' active');
+		});
+	}
+});
+
 // паралакс
 $(window).scroll(function() {
   parallax();
