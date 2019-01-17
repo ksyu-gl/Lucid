@@ -158,7 +158,6 @@ a {
     .banner {
       padding: 80px 0; } }
   .banner__content {
-    position: relative;
     padding-top: 23px; }
   .banner__title {
     margin: 0;
@@ -175,13 +174,22 @@ a {
         font-size: 40px; } }
   .banner__phone {
     position: absolute;
-    top: -15px;
-    right: -20px;
+    top: 100px;
+    right: 210px;
     width: 490px;
     height: 640px;
     background-image: url("../img/devices.png");
     -webkit-background-size: cover;
             background-size: cover; }
+    @media (max-width: 1400px) {
+      .banner__phone {
+        right: 150px; } }
+    @media (max-width: 1300px) {
+      .banner__phone {
+        right: 100px; } }
+    @media (max-width: 1100px) {
+      .banner__phone {
+        right: 50px; } }
     @media (max-width: 991px) {
       .banner__phone {
         display: none; } }
